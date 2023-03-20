@@ -2,6 +2,7 @@
 import Controladores.ListaController;
 import Modelos.Pacientes;
 import Modelos.modeloDocGarcia;
+import Modelos.modeloDocHernandez;
 import Vistas.frmListas;
 import Vistas.frmPrincipal;
 
@@ -21,7 +22,7 @@ public class main {
         frmPrincipal VistaPrincipal = new frmPrincipal();
         frmListas VistaListas = new frmListas(VistaPrincipal, true);
         modeloDocGarcia modeloDocGarcia = new modeloDocGarcia();
-        Pacientes modeloPacientes = new Pacientes(nombre,apellido);
-        ListaController ControladorLista = new ListaController(VistaPrincipal, VistaListas, ModeloPacientes, modeloDocGarcia, modeloDocHernandez);
+        modeloDocHernandez modeloDocHernandez = new modeloDocHernandez();
+        ListaController ControladorLista = new ListaController(VistaPrincipal, VistaListas, modeloDocGarcia, modeloDocHernandez);
     }
 }

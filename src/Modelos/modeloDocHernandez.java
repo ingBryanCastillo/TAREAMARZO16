@@ -9,12 +9,13 @@ import java.util.LinkedList;
 import java.util.Queue;
 import javax.swing.JOptionPane;
 
+
 /**
  *
  * @author umg
  */
 public class modeloDocHernandez {
-    Queue<Pacientes> ListaHernandez = new LinkedList(); 
+Queue<Pacientes> ListaHernandez = new LinkedList(); 
     
     public void EncolarPacienteHernandez (String Ape, String Nom)
     {
@@ -36,4 +37,3 @@ public Queue ListarPacientesHernandez()
    }
     
 }
-
